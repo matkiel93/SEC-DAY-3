@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment Day 2-2</title>
+    <style>
+      /* to overwrite user agent stylesheet */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* header */
+      header {
+        position: relative;
+        /* background-color: yellow; */
+        height: 80px;
+      }
+      header > .child1 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 20px;
+        margin-left: 30px;
+        background-color: darkgray;
+      }
+      header > .child2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      header > .child3 {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-right: 30px;
+      }
+
+      /* section 2 */
+      #section2 {
+        height: 400px;
+        background-color: darkgray;
+        position: relative;
+      }
+      #section2 > span {
+        /* background-color: green; */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        /* transform: translateX(-50%, -50%); */
+      }
+
+      /* section 3 */
+      #section3 {
+        position: relative;
+        height: 200px;
+      }
+      #section3 > .child1 {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 200px;
+      }
+      #section3 > .child2 {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 200px;
+      }
+      #section3 > .child1 > .box {
+        width: 90%;
+        height: 80%;
+        background-color: darkgray;
+        margin: 20px;
+      }
+      #section3 > .child2 > p {
+        margin: 40px;
+      }
+
+      /* section4 */
+      #section4 {
+        position: relative;
+        height: 225px;
+      }
+      #section4 > .child1 {
+        position: absolute;
+        width: 45%;
+        height: 175px;
+        margin: 20px;
+      }
+      #section4 > .child2 {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 200px;
+      }
+      #section4 > .child2 > .box {
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        background-color: darkgray;
+        left: 50%;
+        top: 50%;
+        transform: translatex(-50%) translateY(-50%);
+      }
+      /* section5 */
+      #section5 {
+        position: relative;
+        height: 150px;
+      }
+      #section5 > .child1 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      #section5 > .child2 {
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="child1">Logo</div>
+      <div class="child2">
+        <span style="padding-right: 20px">HOME</span>
+        <span style="padding-right: 20px">ABOUT</span>
+        <span style="padding-right: 20px">DESTINATIONS</span>
+        <span style="padding-right: 20px">GALLERY</span>
+      </div>
+      <div class="child3">
+        <img src="./Assets/Vector.svg" alt="Search Icon" />
+      </div>
+    </header>
+
+    <!-- section 2 -->
+    <section id="section2">
+      <span>Master Slider</span>
+    </section>
+
+    <!-- section 3 -->
+    <section id="section3">
+      <div class="child1">
+        <div class="box"></div>
+      </div>
+      <div class="child2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          dis hac faucibus eget. Ultricies ut tristique ultricies etiam. Risus
+          dapibus felis congue feugiat dui. Eleifend suscipit nec, imperdiet
+          auctor neque, augue ac tincidunt ut. Nulla facilisi velit odio
+          consectetur. Volutpat vel dignissim donec posuere blandit. Pulvinar
+          odio neque, eget nibh facilisi nisl. Consectetur venenatis cursus
+          viverra morbi ut massa consectetur sed. Nisl tellus curabitur
+          tincidunt eget. Cursus scelerisque sollicitudin tortor montes, nisl
+          faucibus. Elementum sit et eu enim commodo, fermentum dignissim non
+          eget. Euismod pulvinar vitae sapien, ut cras.
+        </p>
+      </div>
+    </section>
+
+    <!-- section 4 -->
+    <section id="section4">
+      <div class="child1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea,
+          cum beatae sed nemo soluta maiores blanditiis incidunt, voluptate quos
+          voluptatibus pariatur ratione necessitatibus. Assumenda totam
+          consequuntur incidunt culpa tempore!
+        </p>
+      </div>
+      <div class="child2">
+        <div class="box"></div>
+      </div>
+    </section>
+    <!-- section5 -->
+    <section id="section5">
+      <div class="child1">
+        <img src="./Assets/facebook.svg" alt="" style="padding: 20px" />
+        <img src="./Assets/instagram.svg" alt="" style="padding: 20px" />
+        <img src="./Assets/pixar.svg" alt="" style="padding: 20px" />
+        <img src="./Assets/twitter.svg" alt="" style="padding: 20px" />
+        <img src="./Assets/youtube.svg" alt="" style="padding: 20px" />
+      </div>
+      <div class="child2">
+        <img src="./Assets/copyright.svg" alt="" />
+        <span>2021 - All rights reserved</span>
+      </div>
+    </section>
+  </body>
+</html>
